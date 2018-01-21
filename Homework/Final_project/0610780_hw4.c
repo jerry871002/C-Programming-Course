@@ -43,6 +43,7 @@ int main(int argc, char* argv[]) {
     fscanf(infPtr, "%*s %*s %[^;]", s2);
     fscanf(infPtr, "%*s %*s %[^;] %*[;]", s3);
     
+    //buffer = s1 + s2 + s3
     strcat(s1, ",");
     strcat(s2, ",");
     strcpy(buffer, s1);
