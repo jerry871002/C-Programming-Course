@@ -21,16 +21,16 @@ void levelization(gate*, int);
 void simulation(node*, int, int);
 void find_path(gate*, int);
 
-int main(int argc, char* argv[]) {	
-	//Open the file
-	FILE *infPtr;
-	infPtr = fopen(argv[1], "r");
-	if(infPtr != NULL)
-		printf("%s has read\n\n", argv[1]);
-	else
-		printf("The file cannot be opened.");
+int main(int argc, char* argv[]) {
+    //Open the file
+    FILE *infPtr;
+    infPtr = fopen(argv[1], "r");
+    if(infPtr != NULL)
+	printf("%s has read\n\n", argv[1]);
+    else
+	printf("The file cannot be opened.");
 
-	int numOfIn, numOfOut, numOfGates;
+    int numOfIn, numOfOut, numOfGates;
     fscanf(infPtr, "%*s %d %d %d", &numOfIn, &numOfOut, &numOfGates);
     gate *gates = malloc(sizeof(gate) * numOfGates);
     node *nodes = malloc(sizeof(node) * (numOfIn + numOfOut) * 2);
