@@ -5,14 +5,14 @@
 #include <string.h>
 
 typedef struct {
-	char name[10];	
+	char name[10];
 	long id;
 	int age;
 	char gender;
 } student;
 
 int main(int argc,char *argv[]) {
-	char inputfile[20] = "none"; 
+	char inputfile[20] = "none";
 	char outputfile[20] = "none";
 	int num;
 	FILE* readPtr;
